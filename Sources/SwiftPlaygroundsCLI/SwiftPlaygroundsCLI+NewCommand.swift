@@ -1,8 +1,8 @@
 //
-//  File.swift
+//  SwiftPlaygroundsCLI+NewCommand.swift
 //  
 //
-//  Created by Sven Tiigi on 11.02.20.
+//  Created by Sven Tiigi on 12.02.20.
 //
 
 import Foundation
@@ -11,26 +11,30 @@ import SwiftPlaygroundsKit
 
 // MARK: - NewCommand
 
-/// The NewCommand
-final class NewCommand {
+extension SwiftPlaygroundsCLI {
     
-    /// The optional PlaygroundBook Name
-    @Param
-    var playgroundBookName: String?
-    
-    /// The View Content Flag
-    @Flag("-v", "--view", description: "Generate Playground with SwiftUI content")
-    var viewContent: Bool
-    
-    /// The remote URL Content Key
-    @Key("-u", "--url", description: "Generate Playground with content from a URL")
-    var remoteContentURL: String?
+    /// The NewCommand
+    final class NewCommand {
+        
+        /// The optional PlaygroundBook Name
+        @Param
+        var playgroundBookName: String?
+        
+        /// The View Content Flag
+        @Flag("-v", "--view", description: "Generate Playground with SwiftUI content")
+        var viewContent: Bool
+        
+        /// The remote URL Content Key
+        @Key("-u", "--url", description: "Generate Playground with content from a URL")
+        var remoteContentURL: String?
+        
+    }
     
 }
 
 // MARK: - Command
 
-extension NewCommand: Command {
+extension SwiftPlaygroundsCLI.NewCommand: Command {
     
     /// The name of the command or command group
     var name: String {

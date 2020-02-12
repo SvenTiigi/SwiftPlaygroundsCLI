@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Path.swift
 //  
 //
 //  Created by Sven Tiigi on 12.02.20.
