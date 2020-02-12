@@ -1,6 +1,35 @@
 # SwiftPlaygroundsCLI
 
-Generate Playgrounds
+<p align="center">
+   <a href="https://developer.apple.com/swift/">
+      <img src="https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat" alt="Swift 5.1">
+   </a>
+   <a href="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/actions?query=workflow%3ACI">
+      <img src="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/workflows/CI/badge.svg" alt="CI Status">
+   </a>
+   <a href="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/releases">
+      <img src="https://img.shields.io/github/release/SvenTiigi/SwiftPlaygroundsCLI.svg" alt="Version">
+   </a>
+   <a href="https://sventiigi.github.io/SwiftPlaygroundsCLI">
+      <img src="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/blob/gh-pages/badge.svg" alt="Documentation">
+   </a>
+   <br/>
+   <a href="https://github.com/yonaskolb/Mint">
+      <img src="https://img.shields.io/badge/Mint-compatible-brightgreen.svg" alt="Mint">
+   </a>
+   <a href="https://brew.sh">
+      <img src="https://img.shields.io/badge/Homebrew-compatible-brightgreen.svg" alt="brew">
+   </a>
+   <a href="https://twitter.com/SvenTiigi/">
+      <img src="https://img.shields.io/badge/Twitter-@SvenTiigi-blue.svg?style=flat" alt="Twitter">
+   </a>
+</p>
+
+<br/>
+
+<p align="center">
+SwiftPlaygroundsCLI enables you to easily generate Swift Playgrounds from your command line.<br/>
+</p>
 
 ## Features
 
