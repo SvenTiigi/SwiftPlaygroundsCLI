@@ -39,6 +39,8 @@ SwiftPlaygroundsCLI enables you to easily generate Swift Playgrounds from your c
 
 ## Installation
 
+### Mint 🌱
+
 [Mint](https://github.com/yonaskolb/Mint) is a package manager that installs and runs Swift command line tool packages.
 
 ```bash
