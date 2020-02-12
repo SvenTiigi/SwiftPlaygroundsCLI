@@ -30,7 +30,7 @@
 <br/>
 
 <p align="center">
-SwiftPlaygroundsCLI enables you to easily generate Swift Playgrounds from your command line 👨‍💻<br/>
+SwiftPlaygroundsCLI enables you to easily generate<br/>Swift Playgrounds from your command line 👨‍💻<br/>
 </p>
 
 ## Features
