@@ -16,22 +16,22 @@ struct Path {
     let rawValue: String
     
     /// Designated Initializer
-    /// - Parameter rawValue: The raw value
-    init(_ rawValue: String) {
-        self.rawValue = NSString(string: rawValue).expandingTildeInPath
-    }
-    
-}
-
-// MARK: - ExpressibleByStringLiteral
-
-extension Path: ExpressibleByStringLiteral {
-    
-    /// Creates an instance initialized to the given string value.
-    ///
-    /// - Parameter value: The value of the new instance.
-    init(stringLiteral value: String) {
-        self.init(value)
+    /// - Parameters:
+    ///   - parents: The parent Paths
+    ///   - rawValue: The raw value
+    init(
+        parents: Path...,
+        rawValue: String
+    ) {
+        let parentPaths: [String] = parents.map { parent in
+            let parent = parent.rawValue
+            if parent.last != "/" {
+                return parent + "/"
+            } else {
+                return parent
+            }
+        }
+        self.rawValue = parentPaths.joined() + NSString(string: rawValue).expandingTildeInPath
     }
     
 }

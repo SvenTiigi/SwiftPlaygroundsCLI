@@ -10,5 +10,9 @@ import Foundation
 // Initialize SwiftPlaygroundsCLI
 let swiftPlaygroundsCLI = SwiftPlaygroundsCLI()
 
+#if DEBUG
+swiftPlaygroundsCLI.debug(arguments: ["new"])
+#else
 // Start SwiftPlaygroundsCLI
 swiftPlaygroundsCLI.start()
+#endif
