@@ -5,9 +5,8 @@ import PackageDescription
 let package = Package(
     name: "SwiftPlaygroundsCLI",
     products: [
-        // The SwiftPlaygroundsCLI executable
         .executable(
-            name: "swiftplaygrounds",
+            name: "swiftplayground",
             targets: ["SwiftPlaygroundsCLI"]
         )
     ],
