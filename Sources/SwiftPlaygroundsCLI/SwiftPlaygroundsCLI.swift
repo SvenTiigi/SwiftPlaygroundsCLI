@@ -13,22 +13,15 @@ import SwiftCLI
 /// The SwiftPlaygroundsCLI
 struct SwiftPlaygroundsCLI {
     
-    // MARK: Properties
-    
     /// The CLI
     private let cli = SwiftCLI.CLI(
         name: "swiftplaygrounds",
         version: "1.0.0",
-        description: "Generate SwiftPlaygrounds"
+        description: "Generate SwiftPlaygrounds",
+        commands: [
+            NewCommand()
+        ]
     )
-    
-    // MARK: Initializer
-    
-    /// Designated Initializer
-    /// - Parameter commands: The Commands.`
-    init(commands: [SwiftCLI.Command] = [NewCommand()]) {
-        self.cli.commands = commands
-    }
     
 }
 

@@ -6,26 +6,22 @@
 //
 
 import Foundation
-import SwiftCLI
 
 // MARK: - Open
 
-extension PlaygroundBook {
+public extension PlaygroundBook {
     
     /// Open PlaygroundBook
-    func open() throws {
+    /// - Parameter executable: The executable to execute a bash command
+    func open(executable: (String) throws -> Void) throws {
         // Open Playgrounds App
-        _ = try SwiftCLI.Task.capture(
-            bash: "open -a Playgrounds.app"
-        )
+        try executable("open -a Playgrounds.app")
         // Sleep for one second to ensure Playgrounds has finished loading
         // This is needed because otherwise if we immeditally open the
         // file SwiftPlayground crashes
         Thread.sleep(forTimeInterval: 2)
         // Open generated PlaygroundBook at destination File Path
-        _ = try SwiftCLI.Task.capture(
-            bash: "open \"\(self.destinationFilePath.rawValue)\""
-        )
+        try executable("open \"\(self.destinationFilePath.rawValue)\"")
     }
     
 }

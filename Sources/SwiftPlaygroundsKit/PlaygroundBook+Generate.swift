@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Generate
 
-extension PlaygroundBook {
+public extension PlaygroundBook {
     
     /// Generate PlaygroundBook in iCloud Directory
     func generate() throws {

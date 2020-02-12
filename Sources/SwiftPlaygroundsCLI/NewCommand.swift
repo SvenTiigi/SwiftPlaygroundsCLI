@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftCLI
+import SwiftPlaygroundsKit
 
 // MARK: - NewCommand
 
@@ -72,7 +73,9 @@ extension NewCommand: Command {
             // Try to generate PlaygroundBook
             try playgroundBook.generate()
             // Try to open PlaygroundBook
-            try playgroundBook.open()
+            try playgroundBook.open { command in
+                _ = try SwiftCLI.Task.capture(bash: command)
+            }
             // Print out success
             self.stdout <<< "Playground generated. Happy coding 👨‍💻👩‍💻"
         } catch {

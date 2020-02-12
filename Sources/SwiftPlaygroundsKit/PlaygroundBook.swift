@@ -10,18 +10,18 @@ import Foundation
 // MARK: - PlaygroundBook
 
 /// The PlaygroundBook
-struct PlaygroundBook {
+public struct PlaygroundBook {
     
     // MARK: Properties
     
     /// The name of the PlaygroundBook
-    let name: String
+    public let name: String
     
     /// The Content
-    let content: Content
+    public let content: Content
     
     /// The FileManager
-    let fileManager: FileManager
+    public let fileManager: FileManager
     
     // MARK: Initializer
     
@@ -30,7 +30,7 @@ struct PlaygroundBook {
     ///   - name: The optional name of the PlaygroundBook. When passing nil the default name is used. Default value `nil`
     ///   - content: The Content. Default value `.default`
     ///   - fileManager: The FileManager. Default value `.default`
-    init(
+    public init(
         name: String? = nil,
         content: Content = .default,
         fileManager: FileManager = .default

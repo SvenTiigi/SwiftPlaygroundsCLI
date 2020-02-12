@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Content
 
-extension PlaygroundBook {
+public extension PlaygroundBook {
     
     /// The PlaygroundBook Content
     enum Content: Equatable, Hashable {
