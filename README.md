@@ -1,4 +1,6 @@
-# SwiftPlaygroundsCLI
+<p align="center">
+   <img width="750" src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/SwiftPlaygroundsCLI.png?token=ACZQQFRCNWG746FWSKVBWJ26JWG4E" alt="SwiftPlaygroundsCLI Header Logo">
+</p>
 
 <p align="center">
    <a href="https://developer.apple.com/swift/">
