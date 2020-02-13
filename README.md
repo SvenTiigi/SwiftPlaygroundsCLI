@@ -30,7 +30,9 @@
 <br/>
 
 <p align="center">
-SwiftPlaygroundsCLI enables you to easily generate<br/>Swift Playgrounds from your command line 👨‍💻<br/>
+   Easily generate Swift Playgrounds from your command line
+   <br/>
+   for the new <a href="https://apps.apple.com/de/app/swift-playgrounds/id1496833156?mt=12">Playgrounds</a> App on macOS 👨‍💻
 </p>
 
 ## Features
