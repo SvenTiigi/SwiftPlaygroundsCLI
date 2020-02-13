@@ -26,10 +26,19 @@ public extension PlaygroundBook {
         // Check if Manifest Content is available
         if let manifestContent = try? String(contentsOfFile: self.manifestFilePath.rawValue) {
             // Replace "My Playground" with PlaygroundBook Name so that the name appears in the Top-Bar
-            let updatedManifestContent = manifestContent.replacingOccurrences(
+            var updatedManifestContent = manifestContent.replacingOccurrences(
                 of: self.defaultPlaygroundPageFileName,
                 with: self.name
             )
+            // Check if Content is equal to View
+            if self.content == .view {
+                // Replace HiddenByDefault with VisibleByDefault
+                // As we want to show the LiveView for View/SwiftUI Content
+                updatedManifestContent = updatedManifestContent.replacingOccurrences(
+                    of: "HiddenByDefault",
+                    with: "VisibleByDefault"
+                )
+            }
             // Write updated ManifestContent
             try? updatedManifestContent.write(
                 toFile: self.manifestFilePath.rawValue,
