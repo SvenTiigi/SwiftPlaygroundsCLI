@@ -36,7 +36,7 @@
 </p>
 
 <p align="center">
-   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/Demo.png?token=ACZQQFRW444NPKQAU2FJIY26JZBP4" width="90%" alt="Demo">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/Demo.png?token=ACZQQFREIXMTO4ZFIKZBSZC6JZB3M" width="90%" alt="Demo">
 </p>
 
 ## Features
