@@ -20,13 +20,17 @@ extension SwiftPlaygroundsCLI {
         @Param
         var playgroundBookName: String?
         
-        /// The View Content Flag
+        /// Bool value if SwiftUI Content should be generated
         @Flag("-v", "--view", description: "Generate Playground with SwiftUI content")
         var viewContent: Bool
         
         /// The remote URL Content Key
         @Key("-u", "--url", description: "Generate Playground with content from a URL")
         var remoteContentURL: String?
+        
+        /// Bool value if Swift Playground should be generated silently without opening SwiftPlaygrounds application
+        @Flag("-s", "--silent", description: "Generate Playground without opening SwiftPlaygrounds application")
+        var silent: Bool
         
     }
     
@@ -43,7 +47,7 @@ extension SwiftPlaygroundsCLI.NewCommand: Command {
     
     /// A concise description of what this command or group is
     var shortDescription: String {
-        "Generate a new Playground"
+        "Generate a new Swift Playground"
     }
     
     /// A longer description of how to use this command or group
@@ -76,12 +80,15 @@ extension SwiftPlaygroundsCLI.NewCommand: Command {
         do {
             // Try to generate PlaygroundBook
             try playgroundBook.generate()
-            // Try to open PlaygroundBook
-            try playgroundBook.open { command in
-                _ = try SwiftCLI.Task.capture(bash: command)
+            // Check if silent is disabled
+            if !self.silent {
+                // Try to open PlaygroundBook
+                try playgroundBook.open { command in
+                    _ = try SwiftCLI.Task.capture(bash: command)
+                }
             }
             // Print out success
-            self.stdout <<< "Playground generated. Happy coding 👨‍💻👩‍💻"
+            self.stdout <<< "Swift Playground generated. Happy coding 👨‍💻👩‍💻"
         } catch {
             // Print out error
             self.stderr <<< "Oops something went wrong 🙈.\nError: \(error)"
