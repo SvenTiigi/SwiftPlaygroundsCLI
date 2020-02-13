@@ -69,6 +69,7 @@ extension PlaygroundBook {
         )
     }
     
+    /// The iCloud File Path
     var iCloudPath: Path {
         .init(
             rawValue: "~/Library/Mobile Documents/iCloud~com~apple~Playgrounds/Documents"
@@ -99,6 +100,7 @@ extension PlaygroundBook {
         )
     }
     
+    /// The main Swift File Path
     var mainSwiftFilePath: Path {
         .init(
             parents: self.playgroundPageFilePath,
