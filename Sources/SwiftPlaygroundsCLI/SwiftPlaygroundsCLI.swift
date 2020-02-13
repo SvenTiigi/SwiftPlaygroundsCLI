@@ -17,7 +17,7 @@ struct SwiftPlaygroundsCLI {
     private let cli = SwiftCLI.CLI(
         name: "swiftplaygrounds",
         version: "1.0.0",
-        description: "Generate SwiftPlaygrounds",
+        description: "Easily generate Swift Playgrounds 👨‍💻",
         commands: [
             NewCommand()
         ]
