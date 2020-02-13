@@ -29,7 +29,7 @@ extension SwiftPlaygroundsCLI {
         var remoteContentURL: String?
         
         /// Bool value if Swift Playground should be generated silently without opening SwiftPlaygrounds application
-        @Flag("-s", "--silent", description: "Generate a Playground without opening SwiftPlaygrounds application")
+        @Flag("-s", "--silent", description: "Generate a Playground without opening the Playgrounds application")
         var silent: Bool
         
     }
