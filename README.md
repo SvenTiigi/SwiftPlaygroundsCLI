@@ -1,5 +1,5 @@
 <p align="center">
-   <img width="800" src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/SwiftPlaygroundsCLI.png?token=ACZQQFRCNWG746FWSKVBWJ26JWG4E" alt="SwiftPlaygroundsCLI Header Logo">
+   <img width="800" src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/SwiftPlaygroundsCLI.png" alt="SwiftPlaygroundsCLI Header Logo">
 </p>
 
 <p align="center">
@@ -36,7 +36,7 @@
 </p>
 
 <p align="center">
-   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/Demo.png?token=ACZQQFREIXMTO4ZFIKZBSZC6JZB3M" width="90%" alt="Demo">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/Demo.png" width="90%" alt="Demo">
 </p>
 
 ## Features
@@ -85,7 +85,7 @@ $ swiftplayground new --view
 ```
 
 <p align="center">
-   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/ViewOptionDemo.png?token=ACZQQFQ5Q7PYN3VGFAXJPOS6JZDCK" alt="View Option Demo">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/ViewOptionDemo.png" alt="View Option Demo">
 </p>
 
 A Playground with contents from a GitHub URL can be generated via:
@@ -95,7 +95,7 @@ $ swiftplayground new --url https://gist.github.com/SvenTiigi/7eae5e55edd9be4121
 ```
 
 <p align="center">
-   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/RemoteOptionDemo.png?token=ACZQQFQJYO5SZX2I6MUJGC26JZDE6" alt="Remote Option Demo">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/RemoteOptionDemo.png" alt="Remote Option Demo">
 </p>
 
 
