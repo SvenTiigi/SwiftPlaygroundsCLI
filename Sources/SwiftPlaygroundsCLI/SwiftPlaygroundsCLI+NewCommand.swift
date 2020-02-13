@@ -24,6 +24,10 @@ extension SwiftPlaygroundsCLI {
         @Flag("-v", "--view", description: "Generate a Playground with a SwiftUI template")
         var viewContent: Bool
         
+        /// Bool value if Clipboard Content should be used
+        @Flag("-c", "--clipboard", description: "Generate a Playground from the current Clipboard content")
+        var clipboardContent: Bool
+        
         /// The remote URL Content Key
         @Key("-u", "--url", description: "Generate a Playground with contents from a URL")
         var remoteContentURL: String?
@@ -65,6 +69,9 @@ extension SwiftPlaygroundsCLI.NewCommand: Command {
         if self.viewContent {
             // Set View Content
             content = .view
+        } else if self.clipboardContent {
+            // Use Clipboard Content
+            content = .clipboard
         } else if let remoteContentURL = self.remoteContentURL {
             // If a remote content URL is available use remote
             content = .remote(url: remoteContentURL)
