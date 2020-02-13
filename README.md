@@ -84,11 +84,20 @@ To generate a Playground with a SwiftUI template run:
 $ swiftplayground new --view
 ```
 
+<p align="center">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/ViewOptionDemo.png?token=ACZQQFQ5Q7PYN3VGFAXJPOS6JZDCK" alt="View Option Demo">
+</p>
+
 A Playground with contents from a GitHub URL can be generated via:
 
 ```bash
 $ swiftplayground new --url https://gist.github.com/SvenTiigi/7eae5e55edd9be41211470fcbd937285
 ```
+
+<p align="center">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/RemoteOptionDemo.png?token=ACZQQFQJYO5SZX2I6MUJGC26JZDE6" alt="Remote Option Demo">
+</p>
+
 
 ## Arguments
 
