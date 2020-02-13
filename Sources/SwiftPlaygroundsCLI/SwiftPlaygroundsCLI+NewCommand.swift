@@ -21,15 +21,15 @@ extension SwiftPlaygroundsCLI {
         var playgroundBookName: String?
         
         /// Bool value if SwiftUI Content should be generated
-        @Flag("-v", "--view", description: "Generate Playground with SwiftUI content")
+        @Flag("-v", "--view", description: "Generate a Playground with a SwiftUI template")
         var viewContent: Bool
         
         /// The remote URL Content Key
-        @Key("-u", "--url", description: "Generate Playground with content from a URL")
+        @Key("-u", "--url", description: "Generate a Playground with contents from a URL")
         var remoteContentURL: String?
         
         /// Bool value if Swift Playground should be generated silently without opening SwiftPlaygrounds application
-        @Flag("-s", "--silent", description: "Generate Playground without opening SwiftPlaygrounds application")
+        @Flag("-s", "--silent", description: "Generate a Playground without opening SwiftPlaygrounds application")
         var silent: Bool
         
     }

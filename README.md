@@ -63,5 +63,64 @@ $ brew install swiftplaygroundscli
 To generate a new Swift Playground simply run:
 
 ```bash
+$ swiftplayground new
+```
+
+If you wish to specify a name for the Playground run:
+
+```bash
 $ swiftplayground new MyAwesomePlayground
+```
+
+To generate a Playground with a SwiftUI template run:
+
+```bash
+$ swiftplayground new --view
+```
+
+A Playground with contents from a GitHub URL can be generated via:
+
+```bash
+$ swiftplayground new --url https://gist.github.com/SvenTiigi/7eae5e55edd9be41211470fcbd937285
+```
+
+## Arguments
+
+Here is a list of the available arguments that SwiftPlaygroundsCLI support.
+
+| Long parameter | Short parameter | Description
+| ----------- | ----------- | -------------- |
+| `--view` | `-v` | Generate a Playground with a SwiftUI template |
+| `--url` | `-u` | Generate a Playground with contents from a URL |
+| `--silent` | `-s` | Generate a Playground without opening SwiftPlaygrounds application |
+
+## Contributing
+Contributions are very welcome 🙌 🤓
+
+## Credits
+SwiftPlaygroundsCLI is inspired by [`Playground`](https://github.com/JohnSundell/Playground) from [JohnSundell](https://twitter.com/johnsundell)
+
+## License
+
+```
+SwiftKit
+Copyright (c) 2020 Sven Tiigi <sven.tiigi@gmail.com>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 ```
