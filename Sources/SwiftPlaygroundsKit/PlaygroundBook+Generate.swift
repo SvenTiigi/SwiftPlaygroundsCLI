@@ -27,7 +27,7 @@ public extension PlaygroundBook {
         if let manifestContent = try? String(contentsOfFile: self.manifestFilePath.rawValue) {
             // Replace "My Playground" with PlaygroundBook Name so that the name appears in the Top-Bar
             let updatedManifestContent = manifestContent.replacingOccurrences(
-                of: "My Playground",
+                of: self.defaultPlaygroundPageFileName,
                 with: self.name
             )
             // Write updated ManifestContent
@@ -43,6 +43,17 @@ public extension PlaygroundBook {
             atomically: false,
             encoding: .utf8
         )
+    }
+    
+}
+
+// MARK: - Default PlaygroundPage File Name
+
+extension PlaygroundBook {
+    
+    /// The default Playground Page File Name
+    var defaultPlaygroundPageFileName: String {
+        "My Playground"
     }
     
 }
@@ -71,19 +82,27 @@ extension PlaygroundBook {
             rawValue: "\(self.name).playgroundbook"
         )
     }
+    
+    /// The Playground Page File Path
+    var playgroundPageFilePath: Path {
+        .init(
+            parents: self.destinationFilePath,
+            rawValue: "Contents/Chapters/Chapter1.playgroundchapter/Pages/\(self.defaultPlaygroundPageFileName).playgroundpage"
+        )
+    }
 
     /// The Manifest File Path
     var manifestFilePath: Path {
         .init(
-            parents: self.destinationFilePath,
-            rawValue: "Contents/Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/Manifest.plist"
+            parents: self.playgroundPageFilePath,
+            rawValue: "Manifest.plist"
         )
     }
     
     var mainSwiftFilePath: Path {
         .init(
-            parents: self.destinationFilePath,
-            rawValue: "Contents/Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift"
+            parents: self.playgroundPageFilePath,
+            rawValue: "main.swift"
         )
     }
     
