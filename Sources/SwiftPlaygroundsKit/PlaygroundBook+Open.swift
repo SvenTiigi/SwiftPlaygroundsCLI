@@ -16,9 +16,9 @@ public extension PlaygroundBook {
     func open(executable: (String) throws -> Void) throws {
         // Open Playgrounds App
         try executable("open -a Playgrounds.app")
-        // Sleep for one second to ensure Playgrounds has finished loading
-        // This is needed because otherwise if we immeditally open the
-        // file SwiftPlayground crashes
+        // To prevent a Playgrounds.app Crash we wait for two seconds
+        // to ensure that the Playgrounds.apps has been started properly
+        // before opening the Playground file. Otherwise the Playgrounds.app crashes 🙈
         Thread.sleep(forTimeInterval: 2)
         // Open generated PlaygroundBook at destination File Path
         try executable("open \"\(self.destinationFilePath.rawValue)\"")
