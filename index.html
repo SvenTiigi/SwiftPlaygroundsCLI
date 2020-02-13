@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/SvenTiigi/SwiftPlaygroundsCLI"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/Path.html">Path</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PlaygroundBook.html">PlaygroundBook</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/PlaygroundBook/Content.html">– Content</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+   <img width="800" src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/SwiftPlaygroundsCLI.png?token=ACZQQFRCNWG746FWSKVBWJ26JWG4E" alt="SwiftPlaygroundsCLI Header Logo">
+</p>
+
+<p align="center">
+   <a href="https://developer.apple.com/swift/">
+      <img src="https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat" alt="Swift 5.1">
+   </a>
+   <a href="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/actions?query=workflow%3ACI">
+      <img src="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/workflows/CI/badge.svg" alt="CI Status">
+   </a>
+   <a href="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/releases">
+      <img src="https://img.shields.io/github/release/SvenTiigi/SwiftPlaygroundsCLI.svg" alt="Version">
+   </a>
+   <a href="https://sventiigi.github.io/SwiftPlaygroundsCLI">
+      <img src="https://github.com/SvenTiigi/SwiftPlaygroundsCLI/blob/gh-pages/badge.svg" alt="Documentation">
+   </a>
+   <br/>
+   <a href="https://github.com/yonaskolb/Mint">
+      <img src="https://img.shields.io/badge/Mint-compatible-brightgreen.svg" alt="Mint">
+   </a>
+   <a href="https://brew.sh">
+      <img src="https://img.shields.io/badge/Homebrew-compatible-brightgreen.svg" alt="brew">
+   </a>
+   <a href="https://twitter.com/SvenTiigi/">
+      <img src="https://img.shields.io/badge/Twitter-@SvenTiigi-blue.svg?style=flat" alt="Twitter">
+   </a>
+</p>
+
+<p><br/></p>
+
+<p align="center">
+   Easily generate Swift Playgrounds from your command line
+   <br/>
+   for the new <a href="https://apps.apple.com/de/app/swift-playgrounds/id1496833156?mt=12">Playgrounds</a> App on macOS 👨‍💻
+</p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] Easily generate Swift Playgrounds</li>
+<li>[x] Predefined SwiftUI template option</li>
+<li>[x] Open code from GitHub in a Swift Playground.</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='mint' class='heading'>Mint 🌱</h3>
+
+<p><a href="https://github.com/yonaskolb/Mint">Mint</a> is a package manager that installs and runs Swift command line tool packages.</p>
+<pre class="highlight shell"><code><span class="nv">$ </span>mint <span class="nb">install </span>SvenTiigi/SwiftPlaygroundsCLI
+</code></pre>
+<h3 id='homebrew' class='heading'>Homebrew 🍺</h3>
+
+<p><a href="https://brew.sh/">Homebrew</a> is a free and open-source software package management system that simplifies the installation of software on Apple&rsquo;s macOS operating system.</p>
+<pre class="highlight shell"><code><span class="nv">$ </span>brew tap SvenTiigi/SwiftPlaygroundsCLI
+<span class="nv">$ </span>brew <span class="nb">install </span>swiftplaygroundscli
+</code></pre>
+<h2 id='usage' class='heading'>Usage 👨‍💻</h2>
+
+<p>To generate a new Swift Playground simply run:</p>
+<pre class="highlight shell"><code><span class="nv">$ </span>swiftplayground new
+</code></pre>
+
+<p>If you wish to specify a name for the Playground run:</p>
+<pre class="highlight shell"><code><span class="nv">$ </span>swiftplayground new MyAwesomePlayground
+</code></pre>
+
+<p>To generate a Playground with a SwiftUI template run:</p>
+<pre class="highlight shell"><code><span class="nv">$ </span>swiftplayground new <span class="nt">--view</span>
+</code></pre>
+
+<p>A Playground with contents from a GitHub URL can be generated via:</p>
+<pre class="highlight shell"><code><span class="nv">$ </span>swiftplayground new <span class="nt">--url</span> https://gist.github.com/SvenTiigi/7eae5e55edd9be41211470fcbd937285
+</code></pre>
+<h2 id='arguments' class='heading'>Arguments</h2>
+
+<p>A list of the available arguments that are supported by the SwiftPlaygroundsCLI.</p>
+
+<table><thead>
+<tr>
+<th>Long parameter</th>
+<th>Short parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>--view</code></td>
+<td><code>-v</code></td>
+<td>Generate a Playground with a SwiftUI template</td>
+</tr>
+<tr>
+<td><code>--url</code></td>
+<td><code>-u</code></td>
+<td>Generate a Playground with contents from a URL</td>
+</tr>
+<tr>
+<td><code>--silent</code></td>
+<td><code>-s</code></td>
+<td>Generate a Playground without opening SwiftPlaygrounds application</td>
+</tr>
+</tbody></table>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>Contributions are very welcome 🙌 🤓</p>
+<h2 id='credits' class='heading'>Credits</h2>
+
+<p>SwiftPlaygroundsCLI is inspired by <a href="https://github.com/JohnSundell/Playground"><code>Playground</code></a> from <a href="https://twitter.com/johnsundell">JohnSundell</a></p>
+<h2 id='license' class='heading'>License</h2>
+<pre class="highlight plaintext"><code>SwiftPlaygroundsCLI
+Copyright (c) 2020 Sven Tiigi &lt;sven.tiigi@gmail.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+</code></pre>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2020 Sven Tiigi</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
