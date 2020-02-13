@@ -35,6 +35,10 @@
    for the new <a href="https://apps.apple.com/de/app/swift-playgrounds/id1496833156?mt=12">Playgrounds</a> App on macOS 👨‍💻
 </p>
 
+<p align="center">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/Demo.png?token=ACZQQFRW444NPKQAU2FJIY26JZBP4" width="90%" alt="Demo">
+</p>
+
 ## Features
 
 - [x] Easily generate Swift Playgrounds
