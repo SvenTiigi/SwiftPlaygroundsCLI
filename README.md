@@ -41,9 +41,9 @@
 
 ## Features
 
-- [x] Easily generate Swift Playgrounds
-- [x] Predefined SwiftUI template option
-- [x] Open code from GitHub in a Swift Playground.
+- [x] Easily generate and open Swift Playgrounds
+- [x] Generate Playground with SwiftUI template
+- [x] Open code from GitHub in a Swift Playground
 
 ## Installation
 
