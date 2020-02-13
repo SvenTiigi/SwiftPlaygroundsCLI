@@ -35,6 +35,10 @@
    for the new <a href="https://apps.apple.com/de/app/swift-playgrounds/id1496833156?mt=12">Playgrounds</a> App on macOS 👨‍💻
 </p>
 
+<p align="center">
+   <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/Demo.png?token=ACZQQFREIXMTO4ZFIKZBSZC6JZB3M" width="90%" alt="Demo">
+</p>
+
 ## Features
 
 - [x] Easily generate Swift Playgrounds
@@ -94,7 +98,7 @@ A list of the available arguments that are supported by the SwiftPlaygroundsCLI.
 | ----------- | ----------- | -------------- |
 | `--view` | `-v` | Generate a Playground with a SwiftUI template |
 | `--url` | `-u` | Generate a Playground with contents from a URL |
-| `--silent` | `-s` | Generate a Playground without opening SwiftPlaygrounds application |
+| `--silent` | `-s` | Generate a Playground without opening the Playgrounds application |
 
 ## Contributing
 Contributions are very welcome 🙌 🤓
