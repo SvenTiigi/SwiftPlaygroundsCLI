@@ -86,7 +86,7 @@ $ swiftplayground new --url https://gist.github.com/SvenTiigi/7eae5e55edd9be4121
 
 ## Arguments
 
-Here is a list of the available arguments that SwiftPlaygroundsCLI support.
+A list of the available arguments that are supported by the SwiftPlaygroundsCLI.
 
 | Long parameter | Short parameter | Description
 | ----------- | ----------- | -------------- |
