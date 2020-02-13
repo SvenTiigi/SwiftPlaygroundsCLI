@@ -1,7 +1,7 @@
 <p align="center">
    <img width="800" src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/SwiftPlaygroundsCLI.png?token=ACZQQFRCNWG746FWSKVBWJ26JWG4E" alt="SwiftPlaygroundsCLI Header Logo">
 </p>
-<br/>
+
 <p align="center">
    <a href="https://developer.apple.com/swift/">
       <img src="https://img.shields.io/badge/Swift-5.1-orange.svg?style=flat" alt="Swift 5.1">
