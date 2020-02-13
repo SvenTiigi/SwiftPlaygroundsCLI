@@ -103,7 +103,7 @@ SwiftPlaygroundsCLI is inspired by [`Playground`](https://github.com/JohnSundell
 ## License
 
 ```
-SwiftKit
+SwiftPlaygroundsCLI
 Copyright (c) 2020 Sven Tiigi <sven.tiigi@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
