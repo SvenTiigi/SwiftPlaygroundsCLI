@@ -112,10 +112,10 @@ A list of the available arguments that are supported by the SwiftPlaygroundsCLI.
 
 | Long parameter | Short parameter | Description
 | ----------- | ----------- | -------------- |
-| `--view` | `-v` | Generate a Playground with a SwiftUI template |
 | `--clipboard` | `-c` | Generate a Playground from the current Clipboard content |
-| `--url` | `-u` | Generate a Playground with contents from a URL |
 | `--silent` | `-s` | Generate a Playground without opening the Playgrounds application |
+| `--url` | `-u` | Generate a Playground with contents from a URL |
+| `--view` | `-v` | Generate a Playground with a SwiftUI template |
 
 ## Contributing
 Contributions are very welcome 🙌 🤓
