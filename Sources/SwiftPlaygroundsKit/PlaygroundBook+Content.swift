@@ -5,6 +5,7 @@
 //  Created by Sven Tiigi on 12.02.20.
 //
 
+import Cocoa
 import Foundation
 
 // MARK: - Content
@@ -17,6 +18,8 @@ public extension PlaygroundBook {
         case `default`
         /// View Content
         case view
+        /// Clipboard Content
+        case clipboard
         /// Remove Content from URL
         case remote(url: String)
     }
@@ -36,12 +39,6 @@ extension PlaygroundBook.Content {
             
             print("Hello Developer")
             """
-        case .remote(let url):
-            if let code = self.loadCode(from: url) {
-                return code
-            } else {
-                return "// Unable to load content from: \(url)"
-            }
         case .view:
             return """
             import PlaygroundSupport
@@ -59,6 +56,14 @@ extension PlaygroundBook.Content {
             let view = MyView()
             PlaygroundPage.current.setLiveView(view)
             """
+        case .clipboard:
+            return NSPasteboard.general.string(forType: .string) ?? .init()
+        case .remote(let url):
+            if let code = self.loadCode(from: url) {
+                return code
+            } else {
+                return "// Unable to load content from: \(url)"
+            }
         }
     }
     

@@ -78,6 +78,12 @@ If you wish to specify a name for the Playground run:
 $ swiftplayground new MyAwesomePlayground
 ```
 
+Generate a Playground from your clipboard content via:
+
+```bash
+$ swiftplayground new --clipboard
+```
+
 To generate a Playground with a SwiftUI template run:
 
 ```bash
@@ -98,16 +104,18 @@ $ swiftplayground new --url https://gist.github.com/SvenTiigi/7eae5e55edd9be4121
    <img src="https://raw.githubusercontent.com/SvenTiigi/SwiftPlaygroundsCLI/gh-pages/readme-assets/RemoteOptionDemo.png" alt="Remote Option Demo">
 </p>
 
-
 ## Arguments
 
 A list of the available arguments that are supported by the SwiftPlaygroundsCLI.
 
+### new command
+
 | Long parameter | Short parameter | Description
 | ----------- | ----------- | -------------- |
-| `--view` | `-v` | Generate a Playground with a SwiftUI template |
-| `--url` | `-u` | Generate a Playground with contents from a URL |
+| `--clipboard` | `-c` | Generate a Playground from the current Clipboard content |
 | `--silent` | `-s` | Generate a Playground without opening the Playgrounds application |
+| `--url` | `-u` | Generate a Playground with contents from a URL |
+| `--view` | `-v` | Generate a Playground with a SwiftUI template |
 
 ## Contributing
 Contributions are very welcome 🙌 🤓
