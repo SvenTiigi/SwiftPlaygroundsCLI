@@ -117,6 +117,12 @@ A list of the available arguments that are supported by the SwiftPlaygroundsCLI.
 | `--url` | `-u` | Generate a Playground with contents from a URL |
 | `--view` | `-v` | Generate a Playground with a SwiftUI template |
 
+## Featured on
+
+* [iOS Dev Weekly](https://iosdevweekly.com/issues/443)
+* [Swift Weekly](http://digest.swiftweekly.com/issues/swift-weekly-issue-181-226438)
+* [iOS Goodies](https://ios-goodies.com/post/190933912346/week-322)
+
 ## Contributing
 Contributions are very welcome 🙌 🤓
 
