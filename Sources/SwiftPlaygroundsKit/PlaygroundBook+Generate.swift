@@ -18,6 +18,15 @@ public extension PlaygroundBook {
             // Otherwise return out of function
             return
         }
+        // Check if iCloud Path does not exists
+        if !self.fileManager.fileExists(atPath: self.iCloudPath.rawValue) {
+            // Create iCloud Path directory and discard error
+            _ = try? self.fileManager.createDirectory(
+                atPath: self.iCloudPath.rawValue,
+                withIntermediateDirectories: false,
+                attributes: nil
+            )
+        }
         // Try to copy Template File to Destination File Path
         try self.fileManager.copyItem(
             atPath: self.templateFilePath.rawValue,
