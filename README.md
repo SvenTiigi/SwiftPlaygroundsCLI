@@ -47,6 +47,8 @@
 
 ## Installation
 
+> Before installing the SwiftPlaygroundsCLI please make sure you have downloaded the [`Playgrounds.app`](https://apps.apple.com/app/swift-playgrounds/id908519492) from the Mac App Store.
+
 ### Mint 🌱
 
 [Mint](https://github.com/yonaskolb/Mint) is a package manager that installs and runs Swift command line tool packages.
